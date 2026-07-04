@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+crewai
+langchain-groq
+pymongo
+python-dotenv
+pydantic
+motor
+tavily-python
+crewai-tools
+fpdf2
+

@@ -1,0 +1,29 @@
+# General
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Python / Server
+server/__pycache__/
+server/*.py[cod]
+server/venv/
+server/.env
+server/.pytest_cache/
+server/*.spec
+server/test_output.pdf
+
+# Node / Client
+client/node_modules/
+client/dist/
+client/build/
+client/.env
+client/.env.local
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+client/.eslintcache
+
+# Generated Reports
+*.pdf
