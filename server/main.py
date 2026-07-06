@@ -13,10 +13,10 @@ from typing import List, Optional
 # Import local modules
 from models import MarketReport, AnalysisRequest
 import db
-from agents import run_brand_buster
+from agents import run_market_mind_ai
 from pdf_generator import generate_report_pdf
 
-app = FastAPI(title="Brand Buster API")
+app = FastAPI(title="MarketMindAI API")
 
 # Enable CORS
 # Enable CORS with explicit origins or fallback to allow all
@@ -67,7 +67,7 @@ async def run_analysis_task(product_category: str, report_id: str):
         await asyncio.sleep(1)
         
         # Using to_thread for the CPU-intensive agent run
-        result = await asyncio.to_thread(run_brand_buster, product_category)
+        result = await asyncio.to_thread(run_market_mind_ai, product_category)
         
         if result:
             # Set the ID tracking
@@ -87,7 +87,7 @@ async def run_analysis_task(product_category: str, report_id: str):
 
 @app.get("/")
 async def root():
-    return {"message": "Brand Buster API is running"}
+    return {"message": "MarketMindAI API is running"}
 
 @app.post("/analyze")
 async def analyze_brand(request: AnalysisRequest, background_tasks: BackgroundTasks):
@@ -120,7 +120,7 @@ async def download_report_pdf(report_id: str):
         
         # Create a nice filename
         category = report.get("product_category", "report").replace(" ", "_")
-        filename = f"BrandBuster_{category}_{report_id[:8]}.pdf"
+        filename = f"MarketMindAI_{category}_{report_id[:8]}.pdf"
         
         return StreamingResponse(
             io.BytesIO(pdf_bytes),

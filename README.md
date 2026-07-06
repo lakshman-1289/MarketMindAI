@@ -1,14 +1,14 @@
-# Brand Buster 🚀
+# MarketMindAI 🚀
 > **Agentic Competitive Intelligence Platform**
 
-Brand Buster is a next-generation market research tool powered by a **Multi-Agent System** (CrewAI). It autonomously scans the web, analyzes competitor pricing, extracts customer sentiment, and formulates winning business strategies in real-time.
+MarketMindAI is a next-generation market research tool powered by a **Multi-Agent System** (CrewAI). It autonomously scans the web, analyzes competitor pricing, extracts customer sentiment, and formulates winning business strategies in real-time.
 
 
 
 ---
 
 ## 🤖 The AI Crew
-The core of Brand Buster involves three specialized AI agents working in sequence:
+The core of MarketMindAI involves three specialized AI agents working in sequence:
 
 1.  **🕵️ Price Watcher**: Scans major retailers (Amazon, Walmart, etc.) to find real-time product pricing and reliable URLs using the Tavily Search API.
 2.  **🧠 Sentiment Critic**: Digs into forums and reviews to identify clustered "pain points" (e.g., "short battery life," "expensive shipping") and rates their impact level.
@@ -60,8 +60,8 @@ The core of Brand Buster involves three specialized AI agents working in sequenc
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/brand-buster.git
-    cd brand-buster
+    git clone https://github.com/yourusername/MarketMindAI.git
+    cd MarketMindAI
     ```
 
 2.  **Backend Setup**
@@ -89,7 +89,7 @@ The core of Brand Buster involves three specialized AI agents working in sequenc
     TAVILY_API_KEY=your_key
     GROQ_API_KEY=your_key
     MONGODB_URI=mongodb://localhost:27017
-    DB_NAME=brand_buster
+    DB_NAME=market_mind_ai
     ALLOWED_ORIGINS=http://localhost:5173
     ```
 

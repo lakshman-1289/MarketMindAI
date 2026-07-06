@@ -49,7 +49,7 @@ const ResultsView = ({ report }) => {
             const link = document.createElement('a');
             link.href = url;
             const category = report.product_category || 'report';
-            link.setAttribute('download', `BrandBuster_${category.replace(/\s+/g, '_')}.pdf`);
+            link.setAttribute('download', `MarketMindAI_${category.replace(/\s+/g, '_')}.pdf`);
             document.body.appendChild(link);
             link.click();
             link.remove();

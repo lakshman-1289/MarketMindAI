@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
-DB_NAME = os.getenv("DB_NAME", "brand_buster")
+DB_NAME = os.getenv("DB_NAME", "market_mind_ai")
 
 client = AsyncIOMotorClient(MONGODB_URI)
 db = client[DB_NAME]

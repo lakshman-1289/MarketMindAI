@@ -6,7 +6,7 @@ class MarketReportPDF(FPDF):
         # Logo or Title
         self.set_font('Helvetica', 'B', 20)
         self.set_text_color(0, 128, 128) # Teal color
-        self.cell(0, 10, 'Brand Buster Analysis', align='C')
+        self.cell(0, 10, 'MarketMindAI Analysis', align='C')
         self.ln(5)
         
         self.set_font('Helvetica', 'I', 10)

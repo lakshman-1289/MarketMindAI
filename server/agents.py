@@ -1,5 +1,5 @@
 """
-Brand Buster - Multi-Agent Competitive Intelligence Platform
+MarketMindAI - Multi-Agent Competitive Intelligence Platform
 Uses CrewAI with 3 specialized agents for market research.
 
 Powered by Google Gemini with automatic rate limit handling.
@@ -161,7 +161,7 @@ strategy_task = Task(
 # MAIN EXECUTION FUNCTION
 # ============================================
 
-def run_brand_buster(product_category: str) -> MarketReport:
+def run_market_mind_ai(product_category: str) -> MarketReport:
     """
     Execute the 3-agent CrewAI pipeline for market analysis.
     Includes automatic retry with delays for rate limits.

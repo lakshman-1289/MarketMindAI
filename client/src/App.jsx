@@ -183,7 +183,7 @@ function App() {
                     <div className="w-10 h-10 bg-brand-teal rounded-xl flex items-center justify-center shadow-lg shadow-brand-teal/20">
                         <Rocket className="text-white w-6 h-6" />
                     </div>
-                    <span className="text-2xl font-bold tracking-tight text-white">Brand<span className="text-brand-teal">Buster</span></span>
+                    <span className="text-2xl font-bold tracking-tight text-white">Market<span className="text-brand-teal">MindAI</span></span>
                 </div>
                 <div className="hidden md:flex gap-8 text-slate-400 font-medium text-sm">
                     <button className="hover:text-brand-teal transition-colors" onClick={() => { setIsAnalyzing(false); setShowResult(false); }}>Dashboard</button>
