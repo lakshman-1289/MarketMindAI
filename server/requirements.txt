@@ -9,4 +9,5 @@ motor
 tavily-python
 crewai-tools
 fpdf2
-
+litellm
+google-genai
